@@ -1,0 +1,151 @@
+{
+     "profiles": [
+       {
+         "name": "Default profile",
+         "selected": true,
+         "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" },
+         "simple_modifications": [],
+         "complex_modifications": {
+           "rules": [
+             {
+               "description": "Disable Command+1, Command+2, Command+Space, Caps Lock, Command+Tab, Control+Tab, and Command+Q for Minecraft",
+               "manipulators": [
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "1",
+                     "modifiers": {
+                       "mandatory": ["command"]
+                     }
+                   },
+                   "to": []
+                 },
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "2",
+                     "modifiers": {
+                       "mandatory": ["command"]
+                     }
+                   },
+                   "to": []
+                 },
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "spacebar",
+                     "modifiers": {
+                       "mandatory": ["command"]
+                     }
+                   },
+                   "to": []
+                 },
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "caps_lock"
+                   },
+                   "to": []
+                 },
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "tab",
+                     "modifiers": {
+                       "mandatory": ["command"]
+                     }
+                   },
+                   "to": []
+                 },
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "tab",
+                     "modifiers": {
+                       "mandatory": ["control"]
+                     }
+                   },
+                   "to": []
+                 },
+                 {
+                   "type": "basic",
+                   "conditions": [
+                     {
+                       "type": "frontmost_application_if",
+                       "bundle_identifiers": [
+                         "^com\\.mojang\\.minecraft.*",
+                         "^com\\.mojang\\.minecraftlauncher.*"
+                       ]
+                     }
+                   ],
+                   "from": {
+                     "key_code": "q",
+                     "modifiers": {
+                       "mandatory": ["command"]
+                     }
+                   },
+                   "to": []
+                 }
+               ]
+             }
+           ]
+         },
+         "devices": []
+       }
+     ]
+   }
+   
